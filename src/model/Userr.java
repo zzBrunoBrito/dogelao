@@ -19,6 +19,7 @@ public class Userr {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String username;
+	private String password;
 	private Date registerDate;
 	private boolean isAdmin;
 	
@@ -80,6 +81,16 @@ public class Userr {
 
 	public void setPerson(Person person) {
 		this.person = person;
+	}
+
+
+	public String getPassword() {
+		return password;
+	}
+
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	

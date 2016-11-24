@@ -19,11 +19,11 @@ public class Bid {
     private Date bidTime;
 	
 	@JoinColumn
-	@OneToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
+	@OneToOne(cascade=CascadeType.ALL)
     private Item item;
 	
 	@JoinColumn
-	@OneToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
+	@OneToOne(cascade=CascadeType.ALL)
     private Userr user;
 	
 	public Bid() {

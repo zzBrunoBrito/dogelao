@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
 public class Fabrica {
 
 	private static EntityManagerFactory factory = 
-			Persistence.createEntityManagerFactory("fjn");
+			Persistence.createEntityManagerFactory("dogelao");
 
 	private Fabrica() {
 	}

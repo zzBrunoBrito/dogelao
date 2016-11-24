@@ -23,9 +23,17 @@ public class Auction {
 	
 	@JoinColumn()
 	@OneToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
-    private Userr owner;
+    private Userr user;
 	
 	
+	public Userr getUser() {
+		return user;
+	}
+
+	public void setUser(Userr user) {
+		this.user = user;
+	}
+
 	public Auction() {
 		
 	}
@@ -70,11 +78,5 @@ public class Auction {
         this.window_time = window_time;
     }
 
-    public Userr getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Userr owner) {
-        this.owner = owner;
-    }
+    
 }

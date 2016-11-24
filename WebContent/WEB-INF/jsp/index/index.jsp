@@ -14,10 +14,10 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="../../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../../../css/style-index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="../../../css/font.css" rel="stylesheet">
-    <link href="../../../css/animate.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/style-index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/font.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/animate.css" rel="stylesheet">
 
 </head>
 <body style="overflow: hidden;">
@@ -88,6 +88,28 @@
             </form>
         </div>
     </div>
+    
+    <div>
+    	<form method="post" action="/dogepqp/register-user">
+    		<input type="text" name="user.username">
+    		<input type="text" name="user.password">
+    		
+	    	<input type="text" name="user.person.name">
+	    	<input type="text" name="user.person.sex">
+	    	<input type="text" name="user.person.email">
+	    	<input type="text" name="user.person.cellphone">
+	    	<input type="text" name="user.person.telephone">
+    	
+    		<input type="text" name="user.person.address.neighborhood">
+    		<input type="text" name="user.person.address.number">
+    		<input type="text" name="user.person.address.cep">
+    		<input type="text" name="user.person.address.street">
+    		<input type="text" name="user.person.address.city">
+    		
+    		<input type="submit">
+    	</form>
+    	
+    </div>
 
 </div>
 
@@ -133,11 +155,11 @@
 
 
 <!--  Scripts-->
-<script src="../../../js/jquery.js"></script>
-<script src="../../../js/materialize.js"></script>
-<script src="../../../js/init.js"></script>
-<script src="../../../js/js.js"></script>
-<script src="../../../js/jquery.parallax.js"></script>
+<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/jquery.js"></script>
+<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/materialize.js"></script>
+<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/init.js"></script>
+<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/js.js"></script>
+<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/jquery.parallax.js"></script>
 <script>
     jQuery(document).ready(function(){
         // Declare parallax on layers

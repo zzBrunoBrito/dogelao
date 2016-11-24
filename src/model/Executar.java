@@ -1,6 +1,8 @@
 package model;
 
 
+import dao.UserrDao;
+import dao.interfaces.UserrDaoInterface;
 import dao.util.Fabrica;
 
 import java.util.Date;
@@ -30,11 +32,12 @@ public class Executar {
 		
 		Userr u = new Userr();
 		u.setAdmin(false);
+		u.setPassword("1231231");
 		u.setRegisterDate(new Date());
 		u.setUsername("sdasdas");
 		u.setPerson(p);
 
-        Auction auc = new Auction();
+        /*Auction auc = new Auction();
         auc.setEndDate(new Date());
         auc.setName("Xico leiloes");
         auc.setOwner(u);
@@ -61,18 +64,18 @@ public class Executar {
 
         Inscription ins = new Inscription();
         ins.setUser(u);
-        ins.setAuction(auc);
+        ins.setAuction(auc);*/
 
 
 		try {
 			EntityManager em = Fabrica.getEntityManager();
 			em.getTransaction().begin();
-			em.persist(auc);
-            em.persist(i);
-            em.persist(i2);
-            em.persist(bid);
-            em.persist(ins);
+			
 			em.getTransaction().commit();
+			
+			UserrDaoInterface dao = new UserrDao();
+			dao.save(u);
+			
 			
 		} catch (NullPointerException e) {
 			System.out.println("Proprietario nao encontrado!");
