@@ -4,21 +4,24 @@
   Time: 7:39 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Starter Template - Materialize</title>
-
-    <!-- CSS  -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Dogelão</title>
+	<link rel="icon" href="favicon.ico">
+	<link href="/WebContent/WEB-INF/resources/css/materialize.css" rel="stylesheet" type="text/css">
+	<link href="WEB-INF/resources/css/style-index.css" rel="stylesheet" type="text/css">
+	<link href="/WEB-INF/resources/css/font.css" rel="stylesheet" type="text/css">
+	<link href="/WEB-INF/resources/css/animate.css" rel="stylesheet" type="text/css">
+    <!-- CSS 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/style-index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/font.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/animate.css" rel="stylesheet">
-
+	 -->
 </head>
 <body style="overflow: hidden;">
 
@@ -64,17 +67,17 @@
 
     <div class="container">
         <div class="card s5">
-            <form action="">
+            <form action="/dogepqp/login" method="post">
                 <div class="container">
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
+                            <input id="email" type="text" class="validate" name="user.username">
+                            <label for="email">Login</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="password" type="password" class="validate">
+                            <input id="password" type="password" class="validate" name="user.password">
                             <label for="password">Senha</label>
                         </div>
                     </div>

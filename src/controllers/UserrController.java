@@ -8,6 +8,7 @@ import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
+import component.UserSession;
 import dao.UserrDao;
 import dao.interfaces.UserrDaoInterface;
 import dao.util.Fabrica;
@@ -22,12 +23,16 @@ public class UserrController {
 	@Inject
 	Result result;
 	
+	@Inject
+	protected UserSession session;
+	
 	protected UserrDaoInterface dao;
 	
 	public UserrController(){
 		
 	}
 	
+	@Inject
 	public UserrController(UserrDao dao) {
 		this.dao = dao;
 	}
@@ -41,10 +46,37 @@ public class UserrController {
 	public void register(Userr user){
 		System.out.println(user.getUsername());
 		System.out.println(user.getPerson().getName());
-		UserrDaoInterface dao = new UserrDao();
 		dao.save(user);
 		
-		//result.redirectTo(IndexController.class).index();
+		result.redirectTo(IndexController.class).index();
+		
+	}
+	
+	@Post("/login")
+	public void login(Userr user){
+		if (dao.check(user) != null){
+			session.setUsuario(user);
+			result.redirectTo(this).home();
+		}else{
+			result.include("msg", "Credenciais inválidas");
+			result.redirectTo(IndexController.class).index();
+		}
+		
+	}
+	
+	@Post("/logout")
+	public void logout(){
+		session.logout();
+	}
+	
+	@Get("/home")
+	public void home(){
 		
 	}
 }
+
+
+
+
+
+

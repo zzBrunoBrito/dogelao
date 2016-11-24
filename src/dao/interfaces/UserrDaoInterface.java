@@ -7,4 +7,5 @@ import model.Userr;
  */
 public interface UserrDaoInterface {
 	public Userr save(Userr user);
+	public Userr check(Userr user);
 }
