@@ -7,12 +7,16 @@ import org.hibernate.criterion.Restrictions;
 
 import dao.interfaces.UserrDaoInterface;
 import dao.util.Fabrica;
+import model.Auction;
 import model.Userr;
 
 /**
  * Created by bruno on 11/18/16.
  */
 public class UserrDao extends AbstractGenericDao<Userr, Integer> implements UserrDaoInterface {
+	public UserrDao(){
+		super(Userr.class);
+	}
 	
 	public Userr check(Userr user){
 		EntityManager em = Fabrica.getEntityManager();

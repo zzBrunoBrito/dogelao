@@ -1,7 +1,7 @@
 package model;
 
-
-import dao.UserrDao;
+import dao.AuctionDao;
+import dao.interfaces.AuctionDaoInterface;
 import dao.interfaces.UserrDaoInterface;
 import dao.util.Fabrica;
 
@@ -37,14 +37,14 @@ public class Executar {
 		u.setUsername("sdasdas");
 		u.setPerson(p);
 
-        /*Auction auc = new Auction();
+        Auction auc = new Auction();
         auc.setEndDate(new Date());
         auc.setName("Xico leiloes");
-        auc.setOwner(u);
         auc.setStarDate(new Date());
         auc.setWindow_time(new Date());
+        auc.setUser(u);
 
-        Item i = new Item();
+        /*Item i = new Item();
         i.setName("XILITAO");
         i.setPrice(2.55);
         i.setQuantity(3);
@@ -67,19 +67,21 @@ public class Executar {
         ins.setAuction(auc);*/
 
 
-		try {
+		//try {
 			EntityManager em = Fabrica.getEntityManager();
 			em.getTransaction().begin();
 			
 			em.getTransaction().commit();
 			
-			UserrDaoInterface dao = new UserrDao();
-			dao.save(u);
+			//UserrDaoInterface dao = new UserrDao();
+			AuctionDaoInterface dao = new AuctionDao();
+			//dao.save(auc);
+			Auction aa = dao.findById(1);System.out.println(aa.getName());
+			dao.remove(1);
 			
-			
-		} catch (NullPointerException e) {
-			System.out.println("Proprietario nao encontrado!");
-		}
+		//} catch (NullPointerException e) {
+			//System.out.println("Falha ao encontrar");
+		//}
 				
 		Fabrica.fecharFabrica();
 

@@ -16,7 +16,7 @@ public abstract class AbstractGenericDao<T, I extends Serializable> implements G
 
     protected EntityManager entityManager;
 
-    private Class<T> persistedClass;
+    protected Class<T> persistedClass;
 
     protected AbstractGenericDao() {
 
@@ -50,7 +50,9 @@ public abstract class AbstractGenericDao<T, I extends Serializable> implements G
         EntityManager em = Fabrica.getEntityManager();
         em.getTransaction().begin();
         T entity = findById(id);
-        em.remove(entity);
+        T mergedEntity = em.merge(entity);
+        em.remove(mergedEntity);
+        em.flush();
         em.getTransaction().commit();
         em.close();
     }
