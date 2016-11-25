@@ -24,14 +24,12 @@ public class CheckRole {
 
 	@AfterCall
 	public void redirect() {
-		System.out.println(session.getUsuario().getUsername());
-		System.out.println(session.getUsuario().isAdmin());
-		System.out.println(session.getUsuario().getId());
-		if (session.getUsuario().isAdmin())
-			result.redirectTo(UserrController.class).homeAdmin();
-		//else
-			//result.redirectTo(UserrController.class).home();
-
+		if (session.isLogged()){
+			if (session.getUsuario().isAdmin())
+				result.redirectTo(UserrController.class).homeAdmin();
+			else
+				result.redirectTo(UserrController.class).home();
+		}
 	}
 
 }

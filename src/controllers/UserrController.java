@@ -4,6 +4,8 @@ package controllers;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
+import annotation.Admin;
+import annotation.Logged;
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
@@ -52,11 +54,12 @@ public class UserrController {
 		
 	}
 	
+	@Admin
 	@Post("/login")
 	public void login(Userr user){
 		if (dao.check(user) != null){
-			session.setUsuario(user);
-			result.redirectTo(this).home();
+			session.setUsuario(dao.check(user));
+			//result.redirectTo(this).home();
 		}else{
 			result.include("msg", "Credenciais inválidas");
 			result.redirectTo(IndexController.class).index();
@@ -64,11 +67,13 @@ public class UserrController {
 		
 	}
 	
+	@Logged
 	@Post("/logout")
 	public void logout(){
 		session.logout();
 	}
 	
+	@Logged
 	@Get("/home")
 	public void home(){
 		
