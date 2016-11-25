@@ -59,17 +59,17 @@
 <div id="login" class="">
     <div class="container">
         <div class="card s5">
-            <form action="">
+            <form action="/dogepqp/login" method="post">
                 <div class="container">
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
+                            <input id="email" type="text" class="validate" name="user.username">
+                            <label for="email">Login</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="password" type="password" class="validate">
+                            <input id="password" type="password" class="validate" name="user.password">
                             <label for="password">Senha</label>
                         </div>
                     </div>
@@ -94,13 +94,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
+                            <input id="email" type="text" class="validate" name="">
+                            <label for="email">Login</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="password" type="password" class="validate">
+                            <input id="password" type="password" class="validate" name="">
                             <label for="password">Senha</label>
                         </div>
                     </div>

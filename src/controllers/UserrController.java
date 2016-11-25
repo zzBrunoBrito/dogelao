@@ -73,6 +73,11 @@ public class UserrController {
 	public void home(){
 		
 	}
+	
+	@Get("/home-admin")
+	public void homeAdmin(){
+		
+	}
 }
 
 
