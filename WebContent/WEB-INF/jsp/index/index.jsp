@@ -4,25 +4,18 @@
   Time: 7:39 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Dogelão</title>
-	<link rel="icon" href="favicon.ico">
-	<link href="/WebContent/WEB-INF/resources/css/materialize.css" rel="stylesheet" type="text/css">
-	<link href="WEB-INF/resources/css/style-index.css" rel="stylesheet" type="text/css">
-	<link href="/WEB-INF/resources/css/font.css" rel="stylesheet" type="text/css">
-	<link href="/WEB-INF/resources/css/animate.css" rel="stylesheet" type="text/css">
-    <!-- CSS 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/style-index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/font.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/css/animate.css" rel="stylesheet">
-	 -->
-</head>
+
+    <head>
+        <title>Dogelão</title>
+    	<link href="${pageContext.request.contextPath}/assets/css/style-index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    	<jsp:include page="../../../templates/head.jsp"/>
+    </head>
+
+    <!-- CSS  -->
+
 <body style="overflow: hidden;">
 
 
@@ -53,7 +46,7 @@
     <div class="logo hidden animated">
         <div class="inner-circle">
             <div class="border"></div>
-            <img class="doge" src="../../../images/doge-01.png" alt="">
+            <img class="doge" src="${pageContext.request.contextPath}/assets/images/doge-01.png" alt="">
         </div>
     </div>
 
@@ -64,20 +57,19 @@
 </div>
 
 <div id="login" class="">
-
     <div class="container">
         <div class="card s5">
-            <form action="/dogepqp/login" method="post">
+            <form action="">
                 <div class="container">
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="email" type="text" class="validate" name="user.username">
-                            <label for="email">Login</label>
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="password" type="password" class="validate" name="user.password">
+                            <input id="password" type="password" class="validate">
                             <label for="password">Senha</label>
                         </div>
                     </div>
@@ -91,87 +83,75 @@
             </form>
         </div>
     </div>
-    
-    <div>
-    	<form method="post" action="/dogepqp/register-user">
-    		<input type="text" name="user.username">
-    		<input type="text" name="user.password">
-    		
-	    	<input type="text" name="user.person.name">
-	    	<input type="text" name="user.person.sex">
-	    	<input type="text" name="user.person.email">
-	    	<input type="text" name="user.person.cellphone">
-	    	<input type="text" name="user.person.telephone">
-    	
-    		<input type="text" name="user.person.address.neighborhood">
-    		<input type="text" name="user.person.address.number">
-    		<input type="text" name="user.person.address.cep">
-    		<input type="text" name="user.person.address.street">
-    		<input type="text" name="user.person.address.city">
-    		
-    		<input type="submit">
-    	</form>
-    	
-    </div>
-
 </div>
 
 
 
 <div id="cadastro" class="col s12">
-    <!--<div class="container">-->
-
-    <!--<div class="card s5">-->
-
-    <!--<form action="">-->
-    <!--<div class="container">-->
-    <!--<div class="row">-->
-    <!--<div class="input-field col s5">-->
-    <!--<input id="email" type="email" class="validate">-->
-    <!--<label for="email">Email</label>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-    <!--<div class="input-field col s5">-->
-    <!--<input id="password" type="password" class="validate">-->
-    <!--<label for="password">Senha</label>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-    <!--<button class="btn waves-effect waves-light brown darken-4" type="submit" name="action">Submit-->
-    <!--<i class="material-icons right">send</i>-->
-    <!--</button>-->
-    <!--</div>-->
-    <!--<div class="row"></div>-->
-    <!--</div>-->
-    <!--</form>-->
-
-    <!--</div>-->
-    <!--</div>-->
+	<div class="container">
+        <div class="card s5">
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <div class="input-field col s5">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s5">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Senha</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn waves-effect waves-light brown darken-4" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                    <div class="row"></div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 <footer></footer>
 
 
-
-
-
-
 <!--  Scripts-->
-<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/jquery.js"></script>
-<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/materialize.js"></script>
-<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/init.js"></script>
-<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/js.js"></script>
-<script src="${pageContext.request.contextPath}/WebContent/WEB-INF/resources/js/jquery.parallax.js"></script>
+<jsp:include page="../../../templates/script.jsp"/>
+<script src="${pageContext.request.contextPath}/assets/js/js-index.js"></script>
 <script>
-    jQuery(document).ready(function(){
-        // Declare parallax on layers
+
+
+        // Declare parallax on layers        
         jQuery('.parallax-layer').parallax(
                 {mouseport: jQuery("#port")},
 
                 {xparallax: "8%", yparallax: "6%", yorigin: 0.9},
                 {xparallax: "10%", yparallax: "8%", yorigin: 0.9}
-        )});
+        )
+    
+        
+        var nDoge = 60;
+        
+        setTimeout(function(){
+        	for(i=1; i < nDoge; i++){
+                var duration = Math.random() * (4-2) + 2;
+                var left = Math.random() * 50;
+                var delay = Math.random() * 3;
+                if(i >= nDoge/2){
+                    left = -left;
+                }
+                $('.rain').append("<img class='icon' src='${pageContext.request.contextPath}/assets/images/doge-icon-01.svg' style='left:" + left + "%; animation-delay: " + delay + "s; animation-duration:" + duration + "s' >")
+               
+            }
+        }, 1000);
+       
+
+   
 </script>
 </body>
 </html>
+
