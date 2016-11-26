@@ -22,7 +22,7 @@ public class Person {
 	private String email;
 	private String cellphone;
 	private String telephone;
-	
+
 	@JoinColumn()
 	@OneToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
 	Address address;
