@@ -7,5 +7,8 @@ import model.Item;
  * Created by bruno on 11/18/16.
  */
 public class ItemDao extends AbstractGenericDao<Item, Integer> implements ItemDaoInterface {
+	public ItemDao(){
+		super(Item.class);
+	}
 
 }

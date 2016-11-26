@@ -9,7 +9,6 @@ import br.com.caelum.vraptor.Result;
 import model.Userr;
 import component.UserSession;
 import dao.UserrDao;
-import annotation.Public;
 
 @Controller
 public class LoginController {
@@ -21,13 +20,11 @@ public class LoginController {
 	UserrDao dao = new UserrDao();
 	
     @Get("login")
-	@Public
 	public void form(){
 		
 	}
 	
     @Post("autenticar")
-	@Public
 	public void auth(Userr user){        
     	//verificar a se o id do obj existe no banco
        if ( user.getPerson().getId().equals(dao.findById(user.getId()))){
