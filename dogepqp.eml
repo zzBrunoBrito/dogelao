@@ -113,8 +113,4 @@
 	<lib name="weld-spi.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/weld-spi.jar!/"/>
 	</lib>
-	<lib name="Tomcat 8.5.6" scope="PROVIDED"/>
-	<levels>
-		<level name="Tomcat 8.5.6" value="application_server_libraries"/>
-	</levels>
 </component>

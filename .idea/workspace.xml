@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50b660b-360d-4f25-995e-91fdbc2d91a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/annotation/Public.class" afterPath="$PROJECT_DIR$/build/classes/annotation/Public.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/component/UserSession.class" afterPath="$PROJECT_DIR$/build/classes/component/UserSession.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/controllers/AuctionController.class" afterPath="$PROJECT_DIR$/build/classes/controllers/AuctionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/controllers/BidController.class" afterPath="$PROJECT_DIR$/build/classes/controllers/BidController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/controllers/IndexController.class" afterPath="$PROJECT_DIR$/build/classes/controllers/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/controllers/ItemController.class" afterPath="$PROJECT_DIR$/build/classes/controllers/ItemController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/controllers/LoginController.class" afterPath="$PROJECT_DIR$/build/classes/controllers/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/controllers/UserrController.class" afterPath="$PROJECT_DIR$/build/classes/controllers/UserrController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/AbstractGenericDao.class" afterPath="$PROJECT_DIR$/build/classes/dao/AbstractGenericDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/AuctionDao.class" afterPath="$PROJECT_DIR$/build/classes/dao/AuctionDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/BidDao.class" afterPath="$PROJECT_DIR$/build/classes/dao/BidDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/ItemDao.class" afterPath="$PROJECT_DIR$/build/classes/dao/ItemDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/UserrDao.class" afterPath="$PROJECT_DIR$/build/classes/dao/UserrDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/interfaces/AuctionDaoInterface.class" afterPath="$PROJECT_DIR$/build/classes/dao/interfaces/AuctionDaoInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/interfaces/BidDaoInterface.class" afterPath="$PROJECT_DIR$/build/classes/dao/interfaces/BidDaoInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/interfaces/GenericDaoInterface.class" afterPath="$PROJECT_DIR$/build/classes/dao/interfaces/GenericDaoInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/interfaces/ItemDaoInterface.class" afterPath="$PROJECT_DIR$/build/classes/dao/interfaces/ItemDaoInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/interfaces/UserrDaoInterface.class" afterPath="$PROJECT_DIR$/build/classes/dao/interfaces/UserrDaoInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/util/Fabrica.class" afterPath="$PROJECT_DIR$/build/classes/dao/util/Fabrica.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/dao/util/Tseste.class" afterPath="$PROJECT_DIR$/build/classes/dao/util/Tseste.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/intercepts/Autenticar.class" afterPath="$PROJECT_DIR$/build/classes/intercepts/Autenticar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/model/Auction.class" afterPath="$PROJECT_DIR$/build/classes/model/Auction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/model/Bid.class" afterPath="$PROJECT_DIR$/build/classes/model/Bid.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/model/Executar.class" afterPath="$PROJECT_DIR$/build/classes/model/Executar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/model/Inscription.class" afterPath="$PROJECT_DIR$/build/classes/model/Inscription.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/model/Item.class" afterPath="$PROJECT_DIR$/build/classes/model/Item.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/model/Userr.class" afterPath="$PROJECT_DIR$/build/classes/model/Userr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/templates/head.jsp" afterPath="$PROJECT_DIR$/WebContent/templates/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Person.java" afterPath="$PROJECT_DIR$/src/model/Person.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dogepqp.eml" afterPath="$PROJECT_DIR$/dogepqp.eml" />
     </list>
     <ignored path="dogepqp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="178" column="113" selection-start-line="178" selection-start-column="113" selection-end-line="178" selection-end-column="113" />
+            <state relative-caret-position="1989">
+              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,9 +50,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,7 +60,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,6 +83,7 @@
         <option value="$PROJECT_DIR$/src/annotation/Public.java" />
         <option value="$PROJECT_DIR$/src/dao/ItemDao.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/home.jsp" />
       </list>
     </option>
   </component>
@@ -149,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,6 +228,32 @@
               <option name="myItemId" value="WebContent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dogepqp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dogelao-agora-vai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -300,8 +307,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -838,11 +846,21 @@
       <workItem from="1480092530666" duration="1001000" />
       <workItem from="1480098695812" duration="1027000" />
       <workItem from="1480107709288" duration="2812000" />
+      <workItem from="1480159207871" duration="474000" />
+      <workItem from="1480204165289" duration="47000" />
     </task>
+    <task id="LOCAL-00001" summary="home">
+      <created>1480159601477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1480159601477</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6844000" />
+    <option name="totallyTimeSpent" value="7365000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -872,7 +890,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -901,6 +919,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="home" />
+    <option name="LAST_COMMIT_MESSAGE" value="home" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -910,6 +932,66 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/annotation/Public.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/annotation/Public.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -922,9 +1004,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +1012,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -948,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,9 +1045,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -974,7 +1053,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -990,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +1086,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1022,9 +1104,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,14 +1127,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="178" column="113" selection-start-line="178" selection-start-column="113" selection-end-line="178" selection-end-column="113" />
+        <state relative-caret-position="1989">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
