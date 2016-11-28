@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+import constants.Category;
+
 @Entity
 public class Item {
 	@Id
@@ -16,6 +18,8 @@ public class Item {
     private String name;
     private Double price;
     private Integer quantity;
+    private boolean isUsed;
+    private Category category;
 	
 	@JoinColumn()
 	@OneToOne()
@@ -64,4 +68,20 @@ public class Item {
     public void setAuction(Auction auction) {
         this.auction = auction;
     }
+    
+    public boolean isUsed() {
+		return isUsed;
+	}
+
+	public void setUsed(boolean isUsed) {
+		this.isUsed = isUsed;
+	}
+	
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
 }
