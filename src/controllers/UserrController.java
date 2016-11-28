@@ -11,7 +11,9 @@ import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
 import component.UserSession;
+import dao.AuctionDao;
 import dao.UserrDao;
+import dao.interfaces.AuctionDaoInterface;
 import dao.interfaces.UserrDaoInterface;
 import dao.util.Fabrica;
 import model.Item;
@@ -22,21 +24,24 @@ import model.Userr;
  */
 @Controller
 public class UserrController {
-	@Inject
+    @Inject
 	Result result;
 	
 	@Inject
 	protected UserSession session;
 	
-	protected UserrDaoInterface dao;
+	protected UserrDaoInterface userDao;
+	
+	protected AuctionDaoInterface auctionDao;
 	
 	public UserrController(){
 		
 	}
 	
 	@Inject
-	public UserrController(UserrDao dao) {
-		this.dao = dao;
+	public UserrController(UserrDao userDao, AuctionDao auctionDao) {
+		this.userDao = userDao;
+		this.auctionDao = auctionDao;
 	}
 	
 	@Get("/register")
@@ -48,7 +53,7 @@ public class UserrController {
 	public void register(Userr user){
 		System.out.println(user.getUsername());
 		System.out.println(user.getPerson().getName());
-		dao.save(user);
+		userDao.save(user);
 		
 		result.redirectTo(IndexController.class).index();
 		
@@ -57,8 +62,8 @@ public class UserrController {
 	@Admin
 	@Post("/login")
 	public void login(Userr user){
-		if (dao.check(user) != null){
-			session.setUsuario(dao.check(user));
+		if (userDao.check(user) != null){
+			session.setUsuario(userDao.check(user));
 			//result.redirectTo(this).home();
 		}else{
 			result.include("msg", "Credenciais inválidas");
@@ -76,7 +81,7 @@ public class UserrController {
 	@Logged
 	@Get("/home")
 	public void home(){
-		
+		result.include("recentAuction", auctionDao.getRecent());
 	}
 	
 	@Get("/home-admin")

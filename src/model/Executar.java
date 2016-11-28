@@ -6,6 +6,7 @@ import dao.interfaces.UserrDaoInterface;
 import dao.util.Fabrica;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 
@@ -14,35 +15,12 @@ public class Executar {
 
 	public static void main(String[] args) {
 
-		Address a = new Address();
-		a.setCep("sdsadsa");
-		a.setCity("asdasdsa");
-		a.setNeighborhood("aaaaaaaaa");
-		a.setNumber("23");
-		a.setStreet("eua");
 		
-		Person p = new Person();
-		p.setBornDate(new Date());
-		p.setCellphone("sadsad");
-		p.setEmail("enaull");
-		p.setName("asdsadsa");
-		p.setSex("M");
-		p.setTelephone("12312321");
-		p.setAddress(a);
-		
-		Userr u = new Userr();
-		u.setAdmin(false);
-		u.setPassword("1231231");
-		u.setRegisterDate(new Date());
-		u.setUsername("sdasdas");
-		u.setPerson(p);
-
         Auction auc = new Auction();
         auc.setEndDate(new Date());
-        auc.setName("Xico leiloes");
+        auc.setName("Xico leiloes3");
         auc.setStarDate(new Date());
         auc.setWindow_time(new Date());
-        auc.setUser(u);
 
         /*Item i = new Item();
         i.setName("XILITAO");
@@ -76,8 +54,10 @@ public class Executar {
 			//UserrDaoInterface dao = new UserrDao();
 			AuctionDaoInterface dao = new AuctionDao();
 			//dao.save(auc);
-			Auction aa = dao.findById(1);System.out.println(aa.getName());
-			dao.remove(1);
+			List<Auction> list = dao.getRecent();
+			for (Auction auction : list) {
+				System.out.println(auction.getName());
+			}
 			
 		//} catch (NullPointerException e) {
 			//System.out.println("Falha ao encontrar");
