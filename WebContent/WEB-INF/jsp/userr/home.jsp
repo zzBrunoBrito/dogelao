@@ -382,8 +382,8 @@
 </main>
 
 
-<jsp:include page="../../../templates/script.jsp"/>
-<script src="${pageContext.request.contextPath}/assets/js/vanilla-masker.js"></script>
-<script src="${pageContext.request.contextPath}/assets/js/js.js"></script>
+    <jsp:include page="../../../templates/script.jsp"/>
+    <script src="${pageContext.request.contextPath}/assets/js/vanilla-masker.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/js.js"></script>
 </body>
 </html>

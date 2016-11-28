@@ -10,6 +10,7 @@ main, nav{
     padding-left: 400px;
 }
 
+/*icones*/
 svg{
     transform: scale(1.6);
     padding-top: 9px;
@@ -222,4 +223,6 @@ form>div>div>input:first-child{
         left: 100%;
     }
 }
+
+/*pagina de leilao*/
 

@@ -121,6 +121,7 @@
 
 <!--  Scripts-->
 <jsp:include page="../../../templates/script.jsp"/>
+<script src="${pageContext.request.contextPath}/assets/js/jquery.parallax.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/js-index.js"></script>
 <script>
 
@@ -148,9 +149,7 @@
                
             }
         }, 1000);
-       
 
-   
 </script>
 </body>
 </html>
