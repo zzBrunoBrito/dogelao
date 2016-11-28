@@ -12,8 +12,10 @@ import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
 import component.UserSession;
 import dao.AuctionDao;
+import dao.ItemDao;
 import dao.UserrDao;
 import dao.interfaces.AuctionDaoInterface;
+import dao.interfaces.ItemDaoInterface;
 import dao.interfaces.UserrDaoInterface;
 import dao.util.Fabrica;
 import model.Item;
@@ -34,14 +36,17 @@ public class UserrController {
 	
 	protected AuctionDaoInterface auctionDao;
 	
+	protected ItemDaoInterface itemDao;
+	
 	public UserrController(){
 		
 	}
 	
 	@Inject
-	public UserrController(UserrDao userDao, AuctionDao auctionDao) {
+	public UserrController(UserrDao userDao, AuctionDao auctionDao, ItemDao itemDao) {
 		this.userDao = userDao;
 		this.auctionDao = auctionDao;
+		this.itemDao = itemDao;
 	}
 	
 	@Get("/register")
@@ -81,7 +86,9 @@ public class UserrController {
 	@Logged
 	@Get("/home")
 	public void home(){
-		result.include("recentAuction", auctionDao.getRecent());
+		result.include("recentAuction", auctionDao.getRecent(9));
+		result.include("usedItems", itemDao.listByUsage(true, 9));
+		result.include("newItems", itemDao.listByUsage(false, 9));
 	}
 	
 	@Get("/home-admin")

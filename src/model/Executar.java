@@ -1,7 +1,9 @@
 package model;
 
 import dao.AuctionDao;
+import dao.ItemDao;
 import dao.interfaces.AuctionDaoInterface;
+import dao.interfaces.ItemDaoInterface;
 import dao.interfaces.UserrDaoInterface;
 import dao.util.Fabrica;
 
@@ -53,10 +55,15 @@ public class Executar {
 			
 			//UserrDaoInterface dao = new UserrDao();
 			AuctionDaoInterface dao = new AuctionDao();
+			ItemDaoInterface itemDao = new ItemDao();
+			
 			//dao.save(auc);
-			List<Auction> list = dao.getRecent();
-			for (Auction auction : list) {
-				System.out.println(auction.getName());
+			List<Auction> list = dao.getRecent(9);
+			
+			List<Item> itemList = itemDao.listByUsage(true, 9);
+			
+			for (Item item : itemList) {
+				System.out.println(item.getName());
 			}
 			
 		//} catch (NullPointerException e) {

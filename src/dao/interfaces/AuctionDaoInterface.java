@@ -12,5 +12,5 @@ public interface AuctionDaoInterface<I extends Serializable> {
 	public Auction save(Auction auction);
 	public void remove(I id);
 	public Auction findById(I id);
-	public List<Auction> getRecent();
+	public List<Auction> getRecent(int result);
 }

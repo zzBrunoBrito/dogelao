@@ -1,6 +1,15 @@
 package dao;
 
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
+
 import dao.interfaces.ItemDaoInterface;
+import dao.util.Fabrica;
+import model.Auction;
 import model.Item;
 
 /**
@@ -10,5 +19,14 @@ public class ItemDao extends AbstractGenericDao<Item, Integer> implements ItemDa
 	public ItemDao(){
 		super(Item.class);
 	}
-
+	
+	public List<Item> listByUsage(boolean isUsed, int quantity){
+		EntityManager em = Fabrica.getEntityManager();
+        em.getTransaction().begin();
+        Session session = (Session) em.getDelegate();
+        List <Item> item = (List<Item>) session.createCriteria(persistedClass)
+        		.add(Restrictions.eq("isUsed", isUsed)).setMaxResults(quantity).list();
+        em.close();
+        return item;
+	}
 }

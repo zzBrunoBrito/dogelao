@@ -25,13 +25,15 @@ public class AuctionDao extends AbstractGenericDao<Auction, Integer> implements 
 		super(Auction.class);
 	}
 	
-	public List<Auction> getRecent(){
+	public List<Auction> getRecent(int result){
 		EntityManager em = Fabrica.getEntityManager();
         em.getTransaction().begin();
         Session session = (Session) em.getDelegate();
         List<Auction> auc = (List) session.createCriteria(persistedClass)
-        		.addOrder(Order.desc("starDate")).setMaxResults(9).list();
+        		.addOrder(Order.desc("starDate")).setMaxResults(result).list();
         em.close();
         return auc;
 	}
+	
+	
 }
