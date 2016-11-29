@@ -19,22 +19,17 @@ public class Executar {
 
 		
         Auction auc = new Auction();
-        auc.setEndDate(new Date());
         auc.setName("Xico leiloes1");
-        auc.setStarDate(new Date());
-        auc.setWindow_time(new Date());
 
         Item i = new Item();
         i.setName("XILITAO");
         i.setPrice(2.55);
         i.setQuantity(3);
-       
 
         Item i2 = new Item();
         i2.setName("pastel de forno");
         i2.setPrice(98.4);
         i2.setQuantity(2);
-     
         
         Userr u = new Userr();
         u.setId(42);

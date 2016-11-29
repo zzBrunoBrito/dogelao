@@ -1,5 +1,6 @@
 package model;
 
+import java.sql.Time;
 import java.util.Date;
 
 import javax.persistence.CascadeType;
@@ -18,13 +19,15 @@ public class Auction {
 	private Integer id;
     private String name;
     private Date starDate;
-    private Date endDate;
-    private Date window_time;
+    private Time durationTime;
 	
 	@JoinColumn()
-	@OneToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
+	@OneToOne(fetch = FetchType.EAGER, cascade=CascadeType.MERGE)
     private Userr user;
 	
+	@JoinColumn
+	@OneToOne(cascade=CascadeType.ALL)
+	private Item item;
 	
 	public Userr getUser() {
 		return user;
@@ -62,21 +65,22 @@ public class Auction {
         this.starDate = starDate;
     }
 
-    public Date getEndDate() {
-        return endDate;
-    }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
+    public Item getItem() {
+		return item;
+	}
 
-    public Date getWindow_time() {
-        return window_time;
-    }
+	public void setItem(Item item) {
+		this.item = item;
+	}
+	
+	public Time getDurationTime() {
+		return durationTime;
+	}
 
-    public void setWindow_time(Date window_time) {
-        this.window_time = window_time;
-    }
+	public void setDurationTime(Time durationTime) {
+		this.durationTime = durationTime;
+	}
 
     
 }
