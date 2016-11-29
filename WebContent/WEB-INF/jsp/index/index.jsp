@@ -87,29 +87,33 @@
 
 
 
-<div id="cadastro" class="col s12">
+<div id="cadastro">
 	<div class="container">
         <div class="card s5">
-            <form action="">
+            <form action="/register-user">
                 <div class="container">
                     <div class="row">
-                        <div class="input-field col s5">
-                            <input id="email" type="text" class="validate" name="">
-                            <label for="email">Login</label>
+                        <div class="input-field col s3">
+                            <input placeholder="" id="username" type="text">
+                            <label for="username">Nome</label>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s5">
-                            <input id="password" type="password" class="validate" name="">
+
+                        <div class="input-field col s3">
+                            <input placeholder="" id="password" type="text">
                             <label for="password">Senha</label>
                         </div>
+
+
+                        <div class="input-field col s3">
+                            <input placeholder="" id="name" type="text">
+                            <label for="name">Nome</label>
+                        </div>
+
+                        <div class="input-field col s3">
+                            <input placeholder="" id="dateBirth" type="text">
+                            <label for="dateBirth">Data de Nascimento</label>
+                        </div>
                     </div>
-                    <div class="row">
-                        <button class="btn waves-effect waves-light brown darken-4" type="submit" name="action">Submit
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                    <div class="row"></div>
                 </div>
             </form>
         </div>
