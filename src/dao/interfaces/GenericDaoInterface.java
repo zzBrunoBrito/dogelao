@@ -9,7 +9,6 @@ import java.util.List;
 public interface GenericDaoInterface <T, I extends Serializable> {
 
     public T save(T entity);
-    public T update(T entity);
     public void remove(I id);
     public List<T> list();
     public T findById(I id);

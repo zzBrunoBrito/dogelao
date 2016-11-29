@@ -20,11 +20,11 @@ public class Executar {
 		
         Auction auc = new Auction();
         auc.setEndDate(new Date());
-        auc.setName("Xico leiloes3");
+        auc.setName("Xico leiloes1");
         auc.setStarDate(new Date());
         auc.setWindow_time(new Date());
 
-        /*Item i = new Item();
+        Item i = new Item();
         i.setName("XILITAO");
         i.setPrice(2.55);
         i.setQuantity(3);
@@ -35,6 +35,11 @@ public class Executar {
         i2.setPrice(98.4);
         i2.setQuantity(2);
         i2.setAuction(auc);
+        
+        Userr u = new Userr();
+        u.setId(42);
+        u.setPassword("senha");
+        
 
         Bid bid = new Bid();
         bid.setBidTime(new Date());
@@ -44,7 +49,7 @@ public class Executar {
 
         Inscription ins = new Inscription();
         ins.setUser(u);
-        ins.setAuction(auc);*/
+        ins.setAuction(auc);
 
 
 		//try {
@@ -65,6 +70,11 @@ public class Executar {
 			for (Item item : itemList) {
 				System.out.println(item.getName());
 			}
+			dao.save(auc);
+			//List<Auction> list = dao.getRecent();
+			//for (Auction auction : list) {
+				//System.out.println(auction.getName());
+			//}
 			
 		//} catch (NullPointerException e) {
 			//System.out.println("Falha ao encontrar");

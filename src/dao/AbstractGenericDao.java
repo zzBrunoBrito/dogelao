@@ -37,15 +37,6 @@ public abstract class AbstractGenericDao<T, I extends Serializable> implements G
         return entity;
     }
 
-    public T update(T entity) {
-        EntityManager em = Fabrica.getEntityManager();
-        em.getTransaction().begin();
-        em.merge(entity);
-        em.flush();
-        em.getTransaction().commit();
-        return entity;
-    }
-
     public void remove(Serializable id) {
         EntityManager em = Fabrica.getEntityManager();
         em.getTransaction().begin();

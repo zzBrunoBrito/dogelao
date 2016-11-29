@@ -35,5 +35,5 @@ public class AuctionDao extends AbstractGenericDao<Auction, Integer> implements 
         return auc;
 	}
 	
-	
+}
 }
