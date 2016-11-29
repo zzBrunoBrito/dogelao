@@ -1,20 +1,15 @@
 package dao;
 
-import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
 
 import org.hibernate.Session;
 import org.hibernate.criterion.Order;
-import org.hibernate.criterion.Restrictions;
 
 import dao.interfaces.AuctionDaoInterface;
 import dao.util.Fabrica;
 import model.Auction;
-import model.Userr;
 
 /**
  * Created by bruno on 11/18/16.
@@ -35,5 +30,4 @@ public class AuctionDao extends AbstractGenericDao<Auction, Integer> implements 
         return auc;
 	}
 	
-}
 }

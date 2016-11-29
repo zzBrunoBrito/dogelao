@@ -149,51 +149,64 @@
 
     <div id="auction-panel" class="modal bottom-sheet">
         <div class="modal-content">
-            <h4>Preencha o formulï¿½rio abaixo</h4>
-            <form>
+            <h4>Preencha o formulário abaixo</h4>
+            <form action="/dogepqp/register-auction" method="POST">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="item_name" type="text" class="validate" placeholder=" ">
+                        <input id="item_name" type="text"  placeholder=" " name="auction.item.name">
                         <label for="item_name">Nome do item</label>
                     </div>
                     <div class="input-field col s6">
                         <textarea id="descripition" class="materialize-textarea" placeholder="Informaï¿½ï¿½es relevantes sobre o item"></textarea>
-                        <label for="descripition">Descriï¿½ï¿½o</label>
+                        <label for="descripition">Descrição</label>
                     </div>
                 </div>
                 <div class="row">
 
                     <!--TODO: ADICIONAR MASCARA-->
                     <div class="input-field col s3">
-                        <input id="price" type="text" class="validate money" placeholder="">
-                        <label for="price">Preï¿½o inicial</label>
-                    </div>
+                        <input id="price" type="text" placeholder=""name="auction.item.price">
+                        <label for="price">Preço inicial</label>
+                    </div> 
 
-                    <!--TODO: ADICIONAR MASCARA-->
+                    <!--TODO: ADICIONAR MASCARA
                     <div class="input-field col s3">
-                        <input id="time" type="text" class="validate time" placeholder="HH:MM">
-                        <label for="time">Duraï¿½ï¿½o inicial</label>
+                        <input id="time" type="date" placeholder="HH:MM" name="auction.durationTime">
+                        <label for="time">Duração inicial</label>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="row">
                     <div class="input-field col s3">
-                        <select>
-                            <option value="new">Novo</option>
-                            <option value="used">Usado</option>
+                        <select name="auction.item.isUsed">
+                            <option value="false">Novo</option>
+                            <option value="true">Usado</option>
+                        </select>
+                        <label>Estado de Uso</label>
+                    </div>
+                    
+                    <div class="input-field col s3">
+                        <select name="auction.item.category">
+                            <option value="ELETRONICO">ELETRONICO</option>
+                            <option value="ELETRODOMESTICO">ELETRODOMESTICO</option>
+                            <option value="AUTOMOVEL">AUTOMOVEL</option>
+                            <option value="MOVEL">MOVEL</option>
+                            <option value="IMOVEL">IMOVEL</option>
+                            <option value="TERRENO">TERRENO</option>
+                            <option value="INDUSTRIAL">INDUSTRIAL</option>
                         </select>
                         <label>Estado de Uso</label>
                     </div>
 
-                    <div class="file-field input-field col s5">
+                    <!--  <div class="file-field input-field col s5">
                         <div class="btn">
                             <span>Imagem</span>
-                            <input type="file">
+                            <input type="file" name="auction.item.img">
                         </div>
                         <div class="file-path-wrapper">
                             <input class="file-path validate" type="text">
                         </div>
-                    </div>
+                    </div>-->
 
                     <div class="col">
                         <div class="image-container">
@@ -202,13 +215,16 @@
                         </div>
                     </div>
                 </div>
+            <input type="submit">
             </form>
 
         </div>
         <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+            
         </div>
+        
     </div>
+    
 
     <div id="config-panel" class="modal bottom-sheet">
         <div class="modal-content">
