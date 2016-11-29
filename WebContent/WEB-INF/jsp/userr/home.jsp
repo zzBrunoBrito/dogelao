@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Dogelão - Home</title>
+<title>Dogelï¿½o - Home</title>
 	<link href="${pageContext.request.contextPath}/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <jsp:include page="../../../templates/head.jsp"/>
 </head>
@@ -13,7 +14,7 @@
     <div class="nav-wrapper ">
         <form>
             <div center class="input-field">
-                <input id="search" type="search" required placeholder="Pesquise por leilões ou usuários aqui">
+                <input id="search" type="search" required placeholder="Pesquise por leilï¿½es ou usuï¿½rios aqui">
                 <label for="search"><i class="material-icons">search</i></label>
                 <i class="material-icons">close</i>
             </div>
@@ -42,31 +43,31 @@
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="#FFFFFF" d="M7,6H17A6,6 0 0,1 23,12A6,6 0 0,1 17,18C15.22,18 13.63,17.23 12.53,16H11.47C10.37,17.23 8.78,18 7,18A6,6 0 0,1 1,12A6,6 0 0,1 7,6M6,9V11H4V13H6V15H8V13H10V11H8V9H6M15.5,12A1.5,1.5 0 0,0 14,13.5A1.5,1.5 0 0,0 15.5,15A1.5,1.5 0 0,0 17,13.5A1.5,1.5 0 0,0 15.5,12M18.5,9A1.5,1.5 0 0,0 17,10.5A1.5,1.5 0 0,0 18.5,12A1.5,1.5 0 0,0 20,10.5A1.5,1.5 0 0,0 18.5,9Z" />
                             </svg>
-                            Eletrônicos
+                            Eletrï¿½nicos
                         </a>
                         <a href="#!">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="#FFFFFF" d="M20,17H4V5H20M20,3H4C2.89,3 2,3.89 2,5V17A2,2 0 0,0 4,19H8V21H16V19H20A2,2 0 0,0 22,17V5C22,3.89 21.1,3 20,3Z" />
                             </svg>
-                            Eletrodomésticos
+                            Eletrodomï¿½sticos
                         </a>
                         <a href="#!">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="#FFFFFF" d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z" />
                             </svg>
-                            Automóveis
+                            Automï¿½veis
                         </a>
                         <a href="#!">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="#FFFFFF" d="M7,6H9A2,2 0 0,1 11,8V12H5V8A2,2 0 0,1 7,6M15,6H17A2,2 0 0,1 19,8V12H13V8A2,2 0 0,1 15,6M1,9H2A1,1 0 0,1 3,10V12A2,2 0 0,0 5,14H19A2,2 0 0,0 21,12V11L21,10A1,1 0 0,1 22,9H23A1,1 0 0,1 24,10V19H21V17H3V19H0V10A1,1 0 0,1 1,9Z" />
                             </svg>
-                            Móveis
+                            Mï¿½veis
                         </a>
                         <a href="#!">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="#FFFFFF" d="M6,21V8A2,2 0 0,1 8,6L16,3V6A2,2 0 0,1 18,8V21H12V16H8V21H6M14,19H16V16H14V19M8,13H10V9H8V13M12,13H16V9H12V13Z" />
                             </svg>
-                            Imóveis
+                            Imï¿½veis
                         </a>
                         <a href="#!">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -86,13 +87,13 @@
         </ul>
     </li>
     <li><a id="profile" class="menu-item" href="#profile-panel">Meu Perfil</a></li>
-    <li><a id="config" class="menu-item" href="#config-panel">Configurações</a></li>
+    <li><a id="config" class="menu-item" href="#config-panel">Configuraï¿½ï¿½es</a></li>
 
     <h4 class="white-text">
         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
             <path fill="#FFFFFF" d="M5,13H19V11H5M3,17H17V15H3M7,7V9H21V7" />
         </svg>
-        Notificações
+        Notificaï¿½ï¿½es
     </h4>
 
     <!--<img src="images/doge-icon-01.svg" alt="">-->
@@ -118,67 +119,28 @@
                             <img src="sample-1.jpg" >
                             <span class="card-title">Card Title</span>
                         </div>
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                <c:forEach var="auction" items="${recentAuction}">
+                    <div class="col s4">
+                        <div class="card medium">
+                            <div class="card-image">
+                                <img src="${pageContext.request.contextPath}/assets/images/doge-01.png" >
+                                <span class="card-title">${auction.item.name}</span>
+                            </div>
+                            <div class="card-content">
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Doge lance</a>
+                            </div>
                         </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4">
-                    <div class="card medium">
-                        <div class="card-image">
-                            <img src="sample-2.jpg" >
-                            <span class="card-title">Card Title</span>
-                        </div>
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4">
-                    <div class="card medium">
-                        <div class="card-image">
-                            <img src="sample-3.jpg" >
-                            <span class="card-title">Card Title</span>
-                        </div>
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s4">
-                    <div class="card medium">
-                        <div class="card-image">
-                            <img src="4.jpg" >
-                            <span class="card-title">Card Title</span>
-                        </div>
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+                </c:forEach>
             </div>
         </div>
     </div>
     <div id="hot" class="col s12">Test 2</div>
     <div id="ending" class="col s12">Test 4</div>
 
-    <!--botão de adicionar leilão-->
+    <!--botï¿½o de adicionar leilï¿½o-->
     <div class="fixed-action-btn horizontal">
         <a class="modal-trigger btn-floating btn-large waves-effect waves-light brown tooltipped menu-item" href="#auction-panel" data-position="top" data-delay="50" data-tooltip="Leiloar item">
             <i class="large material-icons">library_add</i>
@@ -187,7 +149,7 @@
 
     <div id="auction-panel" class="modal bottom-sheet">
         <div class="modal-content">
-            <h4>Preencha o formulário abaixo</h4>
+            <h4>Preencha o formulï¿½rio abaixo</h4>
             <form>
                 <div class="row">
                     <div class="input-field col s6">
@@ -195,8 +157,8 @@
                         <label for="item_name">Nome do item</label>
                     </div>
                     <div class="input-field col s6">
-                        <textarea id="descripition" class="materialize-textarea" placeholder="Informações relevantes sobre o item"></textarea>
-                        <label for="descripition">Descrição</label>
+                        <textarea id="descripition" class="materialize-textarea" placeholder="Informaï¿½ï¿½es relevantes sobre o item"></textarea>
+                        <label for="descripition">Descriï¿½ï¿½o</label>
                     </div>
                 </div>
                 <div class="row">
@@ -204,13 +166,13 @@
                     <!--TODO: ADICIONAR MASCARA-->
                     <div class="input-field col s3">
                         <input id="price" type="text" class="validate money" placeholder="">
-                        <label for="price">Preço inicial</label>
+                        <label for="price">Preï¿½o inicial</label>
                     </div>
 
                     <!--TODO: ADICIONAR MASCARA-->
                     <div class="input-field col s3">
                         <input id="time" type="text" class="validate time" placeholder="HH:MM">
-                        <label for="time">Duração inicial</label>
+                        <label for="time">Duraï¿½ï¿½o inicial</label>
                     </div>
                 </div>
 
@@ -251,38 +213,38 @@
     <div id="config-panel" class="modal bottom-sheet">
         <div class="modal-content">
             <div class="row">
-                <h3>Ativar notificações para:</h3>
-                <h6>Você será notificado sempre que um novo item das categorias selecionadas estiver disponível</h6>
+                <h3>Ativar notificaï¿½ï¿½es para:</h3>
+                <h6>Vocï¿½ serï¿½ notificado sempre que um novo item das categorias selecionadas estiver disponï¿½vel</h6>
             </div>
             <form action="">
                 <div class="row">
                     <div class="col s3">
                         <input type="checkbox" class="filled-in" id="eletronicos" />
-                        <label for="eletronicos">Eletrônicos</label>
+                        <label for="eletronicos">Eletrï¿½nicos</label>
                     </div>
 
                     <div class="col s3 offset-s3">
                         <input type="checkbox" class="filled-in" id="eletrodomesticos" />
-                        <label for="eletrodomesticos">Eletrodomésticos</label>
+                        <label for="eletrodomesticos">Eletrodomï¿½sticos</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col s3">
                         <input type="checkbox" class="filled-in" id="automoveis" />
-                        <label for="automoveis">Automóveis</label>
+                        <label for="automoveis">Automï¿½veis</label>
                     </div>
 
                     <div class="col s3 offset-s3">
                         <input type="checkbox" class="filled-in" id="moveis" />
-                        <label for="moveis">Móveis</label>
+                        <label for="moveis">Mï¿½veis</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col s3">
                         <input type="checkbox" class="filled-in" id="imoveis" />
-                        <label for="imoveis">Imóveis</label>
+                        <label for="imoveis">Imï¿½veis</label>
                     </div>
 
                     <div class="col s3 offset-s3">
@@ -309,7 +271,7 @@
 
             <form action="">
                 <div class="row">
-                    <h4>Informações Pessoais & Contato</h4>
+                    <h4>Informaï¿½ï¿½es Pessoais & Contato</h4>
                         <div class="input-field col s3">
                             <input placeholder="" id="name" type="text">
                             <label for="name">Nome</label>
@@ -344,7 +306,7 @@
 
                     <div class="input-field col s1">
                         <input placeholder="" id="house-number" type="text">
-                        <label for="house-number">Número</label>
+                        <label for="house-number">Nï¿½mero</label>
                     </div>
 
                     <div class="input-field col s3">
@@ -367,7 +329,7 @@
             </form>
 
             <div class="row">
-                <h4>Meus Items em Leilão</h4>
+                <h4>Meus Items em Leilï¿½o</h4>
             </div>
 
             <div class="row">

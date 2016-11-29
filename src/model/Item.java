@@ -21,9 +21,6 @@ public class Item {
     private boolean isUsed;
     private Category category;
 	
-	@JoinColumn()
-	@OneToOne()
-    private Auction auction;
 	
 	public Item() {
 		
@@ -61,13 +58,7 @@ public class Item {
         this.quantity = quantity;
     }
 
-    public Auction getAuction() {
-        return auction;
-    }
-
-    public void setAuction(Auction auction) {
-        this.auction = auction;
-    }
+    
     
     public boolean isUsed() {
 		return isUsed;
