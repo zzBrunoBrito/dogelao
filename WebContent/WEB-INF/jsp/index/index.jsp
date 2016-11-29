@@ -20,20 +20,20 @@
 
 
 <nav class="nav-extended brown darken-4 animated" style="opacity: 0">
+<a class="press-space">Pressione espaço para logar</a>
     <div class="container">
         <div class="nav-wrapper">
+            
             <div class="row">
                 <div class="col s7 offset-s7">
                     <ul class="right tabs tabs-transparent">
                         <li class="tab"><a class="active" href="#home">Home</a></li>
-                        <li class="tab"><a href="#login">Login</a></li>
                         <li class="tab"><a href="#cadastro">Cadastro</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
 </nav>
 
 
@@ -43,7 +43,7 @@
 <div class="phrase"></div>
 
 <div id="home" class="col s12">
-    <div class="logo hidden animated">
+    <div class="logo animated">
         <div class="inner-circle">
             <div class="border"></div>
             <img class="doge" src="${pageContext.request.contextPath}/assets/images/doge-01.png" alt="">
@@ -56,63 +56,111 @@
     </div>
 </div>
 
-<div id="login" class="">
-    <div class="container">
-        <div class="card s5">
-            <form action="/dogepqp/login" method="post">
+<div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <form action="/dogepqp/login" method="post">
                 <div class="container">
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="email" type="text" class="validate" name="user.username">
-                            <label for="email">Login</label>
+                            <input id="login-username" type="text" name="user.username">
+                            <label for="login-username">Login</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s5">
-                            <input id="password" type="password" class="validate" name="user.password">
-                            <label for="password">Senha</label>
+                            <input id="login-password" type="password" name="user.password">
+                            <label for="login-password">Senha</label>
                         </div>
                     </div>
                     <div class="row">
-                        <button class="btn waves-effect waves-light brown darken-4" type="submit" name="action">Submit
+                        <button class="btn waves-effect waves-light brown darken-4" type="submit" name="action">Entrar
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
-                    <div class="row"></div>
                 </div>
             </form>
-        </div>
     </div>
-</div>
-
-
+  </div>
 
 <div id="cadastro">
 	<div class="container">
         <div class="card s5">
             <form action="/register-user">
                 <div class="container">
+
                     <div class="row">
                         <div class="input-field col s3">
-                            <input placeholder="" id="username" type="text">
-                            <label for="username">Nome</label>
+                            <input id="username" type="text" name="userr.username">
+                            <label for="username">Login</label>
                         </div>
 
                         <div class="input-field col s3">
-                            <input placeholder="" id="password" type="text">
+                            <input id="password" type="text" name="userr.password">
                             <label for="password">Senha</label>
                         </div>
 
+                    </div>
 
+                    <div class="row">
                         <div class="input-field col s3">
-                            <input placeholder="" id="name" type="text">
+                            <input id="name" type="text" name="person.name">
                             <label for="name">Nome</label>
                         </div>
 
                         <div class="input-field col s3">
-                            <input placeholder="" id="dateBirth" type="text">
+                            <input id="dateBirth" type="text" name="person.bornDate">
                             <label for="dateBirth">Data de Nascimento</label>
                         </div>
+
+                        <div class="input-field col s2">
+                            <input id="telephone" type="text" name="person.telephone">
+                            <label for="telephone">Telefone</label>
+                        </div>
+
+                        <div class="input-field col s2">
+                            <input id="cellphone" type="text" name="person.cellphone">
+                            <label for="cellphone">Celular</label>
+                        </div>
+
+                        <div class="input-field col s2">
+                            <select name="person.sex">
+                                <option value="m">Masculino</option>
+                                <option value="f">Feminino</option>
+                                <option value="o">Outro</option>
+                            </select>
+                            <label>Sexo</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s3">
+                            <input id="street" type="text" name="address.street">
+                            <label for="street">Rua</label>
+                        </div>
+
+                        <div class="input-field col s3">
+                            <input id="neighborhood" type="text" name="address.neighborhood">
+                            <label for="neighborhood">Bairro</label>
+                        </div>
+
+              
+
+                        <div class="input-field col s3">
+                            <input id="city" type="text" name="address.city">
+                            <label for="city">Cidade</label>
+                        </div>
+
+                        <div class="input-field col s2">
+                            <input id="number" type="text" name="address.number">
+                            <label for="number">Número</label>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    	<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+						    <i class="material-icons right">send</i>
+						 </button>
                     </div>
                 </div>
             </form>
@@ -129,14 +177,7 @@
 <script src="${pageContext.request.contextPath}/assets/js/js-index.js"></script>
 <script>
 
-
-        // Declare parallax on layers        
-        jQuery('.parallax-layer').parallax(
-                {mouseport: jQuery("#port")},
-
-                {xparallax: "8%", yparallax: "6%", yorigin: 0.9},
-                {xparallax: "10%", yparallax: "8%", yorigin: 0.9}
-        )
+        
     
         
         var nDoge = 60;

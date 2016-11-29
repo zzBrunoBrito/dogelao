@@ -93,7 +93,7 @@
         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
             <path fill="#FFFFFF" d="M5,13H19V11H5M3,17H17V15H3M7,7V9H21V7" />
         </svg>
-        Notificaï¿½ï¿½es
+        Notificações
     </h4>
 
     <!--<img src="images/doge-icon-01.svg" alt="">-->
@@ -339,6 +339,8 @@
         <div class="modal-footer">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Salvar</a>
         </div>
+    </div>
+            </div>
     </div>
 
 </main>

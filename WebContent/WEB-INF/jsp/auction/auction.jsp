@@ -91,7 +91,6 @@
                     </div>
                     <p class="service-name animated">Feito</p>
                     <p class="service-name shadow animated">Feito</p>
-
                     <a class="waves-effect waves-light btn-large brown lighten-1 white-text animated">Voltar à Home</a>
 
                 <div class="black-bg fadeTeste"></div>

@@ -28,13 +28,13 @@ public class Executar {
         i.setName("XILITAO");
         i.setPrice(2.55);
         i.setQuantity(3);
-        i.setAuction(auc);
+       
 
         Item i2 = new Item();
         i2.setName("pastel de forno");
         i2.setPrice(98.4);
         i2.setQuantity(2);
-        i2.setAuction(auc);
+     
         
         Userr u = new Userr();
         u.setId(42);

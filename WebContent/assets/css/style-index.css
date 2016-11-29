@@ -19,6 +19,8 @@ body{
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 @keyframes color{
@@ -133,4 +135,37 @@ body{
     left: 0;
     /*! *opacity: 0.4;*!*/
     z-index: 91;
+}
+
+#cadastro>div>div>form{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav>a:first-child{
+	font-size: 1em;
+	font-family: "Comic Sans MS";
+	position: absolute;
+	left: 15px;
+	top: -7px;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.bottom-sheet{
+    max-height: 50% !important;
+}
+
+.modal-content>form>.container{
+	margin-bottom: 0;
+}
+
+#modal1 form{
+	margin-left: 30%;	
+}
+
+#modal1 button{
+	margin-left: 10%;
 }
