@@ -85,17 +85,17 @@
 <div id="cadastro">
 	<div class="container">
         <div class="card s5">
-            <form action="/register-user">
+            <form action="register-user" method="post">
                 <div class="container">
 
                     <div class="row">
                         <div class="input-field col s3">
-                            <input id="username" type="text" name="userr.username">
+                            <input id="username" type="text" name="user.username">
                             <label for="username">Login</label>
                         </div>
 
                         <div class="input-field col s3">
-                            <input id="password" type="text" name="userr.password">
+                            <input id="password" type="text" name="user.password">
                             <label for="password">Senha</label>
                         </div>
 
@@ -103,27 +103,27 @@
 
                     <div class="row">
                         <div class="input-field col s3">
-                            <input id="name" type="text" name="person.name">
+                            <input id="name" type="text" name="user.person.name">
                             <label for="name">Nome</label>
                         </div>
 
-                        <div class="input-field col s3">
-                            <input id="dateBirth" type="text" name="person.bornDate">
+                  		<div class="input-field col s3">
+                            <input id="dateBirth" class="date" type="text" name="user.person.bornDate">
                             <label for="dateBirth">Data de Nascimento</label>
                         </div>
 
                         <div class="input-field col s2">
-                            <input id="telephone" type="text" name="person.telephone">
+                            <input id="telephone" type="text" name="user.person.telephone">
                             <label for="telephone">Telefone</label>
                         </div>
 
                         <div class="input-field col s2">
-                            <input id="cellphone" type="text" name="person.cellphone">
+                            <input id="cellphone" type="text" name="user.person.cellphone">
                             <label for="cellphone">Celular</label>
                         </div>
-
+.
                         <div class="input-field col s2">
-                            <select name="person.sex">
+                            <select name="user.person.sex">
                                 <option value="m">Masculino</option>
                                 <option value="f">Feminino</option>
                                 <option value="o">Outro</option>
@@ -173,13 +173,10 @@
 
 <!--  Scripts-->
 <jsp:include page="../../../templates/script.jsp"/>
+<script src="${pageContext.request.contextPath}/assets/js/vanilla-masker.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/jquery.parallax.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/js-index.js"></script>
 <script>
-
-        
-    
-        
         var nDoge = 60;
         
         setTimeout(function(){
