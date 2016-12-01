@@ -1,14 +1,19 @@
 package model;
 
 
+import java.sql.Blob;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
-import constants.Category;
+import component.Category;
 
 @Entity
 public class Item {
@@ -19,7 +24,12 @@ public class Item {
     private Double price;
     private Integer quantity;
     private boolean isUsed;
+    
+    @Enumerated(EnumType.STRING)
     private Category category;
+    
+    @Column(columnDefinition="mediumblob")
+    private byte[] image;
 	
 	
 	public Item() {
@@ -74,5 +84,13 @@ public class Item {
 
 	public void setCategory(Category category) {
 		this.category = category;
+	}
+
+	public byte[] getImage() {
+		return image;
+	}
+
+	public void setImage(byte[] image) {
+		this.image = image;
 	}
 }

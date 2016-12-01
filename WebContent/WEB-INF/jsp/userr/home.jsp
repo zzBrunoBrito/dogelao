@@ -10,7 +10,7 @@
     <jsp:include page="../../../templates/head.jsp"/>
 </head>
 <body>
-	<nav class="amber accent-1">
+	<nav class="amber accent-EL1">
     <div class="nav-wrapper ">
         <form>
             <div center class="input-field">
@@ -43,19 +43,19 @@
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="#FFFFFF" d="M7,6H17A6,6 0 0,1 23,12A6,6 0 0,1 17,18C15.22,18 13.63,17.23 12.53,16H11.47C10.37,17.23 8.78,18 7,18A6,6 0 0,1 1,12A6,6 0 0,1 7,6M6,9V11H4V13H6V15H8V13H10V11H8V9H6M15.5,12A1.5,1.5 0 0,0 14,13.5A1.5,1.5 0 0,0 15.5,15A1.5,1.5 0 0,0 17,13.5A1.5,1.5 0 0,0 15.5,12M18.5,9A1.5,1.5 0 0,0 17,10.5A1.5,1.5 0 0,0 18.5,12A1.5,1.5 0 0,0 20,10.5A1.5,1.5 0 0,0 18.5,9Z" />
                             </svg>
-                            Eletrï¿½nicos
+                            Eletrônicos
                         </a>
                         <a href="#!">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="#FFFFFF" d="M20,17H4V5H20M20,3H4C2.89,3 2,3.89 2,5V17A2,2 0 0,0 4,19H8V21H16V19H20A2,2 0 0,0 22,17V5C22,3.89 21.1,3 20,3Z" />
                             </svg>
-                            Eletrodomï¿½sticos
+                            Eletrodomésticos
                         </a>
                         <a href="#!">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="#FFFFFF" d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z" />
                             </svg>
-                            Automï¿½veis
+                            Automóveis
                         </a>
                         <a href="#!">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -198,15 +198,15 @@
                         <label>Estado de Uso</label>
                     </div>
 
-                    <!--  <div class="file-field input-field col s5">
+                      <div class="file-field input-field col s5">
                         <div class="btn">
                             <span>Imagem</span>
-                            <input type="file" name="auction.item.img">
+                            <input type="file" name="auction.item.image">
                         </div>
                         <div class="file-path-wrapper">
                             <input class="file-path validate" type="text">
                         </div>
-                    </div>-->
+                    </div>
 
                     <div class="col">
                         <div class="image-container">

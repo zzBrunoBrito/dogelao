@@ -2,16 +2,24 @@ package controllers;
 
 import java.sql.Time;
 import java.util.Date;
+import java.util.List;
 
 import javax.inject.Inject;
 
-import annotation.Logged;
 import br.com.caelum.vraptor.Controller;
+import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
+import br.com.caelum.vraptor.Result;
+import br.com.caelum.vraptor.view.Results;
+import component.Category;
+import component.Logged;
 import component.UserSession;
 import dao.AuctionDao;
+import dao.ItemDao;
 import dao.interfaces.AuctionDaoInterface;
+import dao.interfaces.ItemDaoInterface;
 import model.Auction;
+import model.Item;
 
 /**
  * Created by bruno on 11/18/16.
@@ -21,15 +29,20 @@ public class AuctionController {
 	
 	@Inject
 	private UserSession session;
+	@Inject
+	private Result result;
+	
 	private AuctionDaoInterface auctionDao;
+	private ItemDaoInterface itemDao;
 	
 	public AuctionController(){
 		
 	}
 	
 	@Inject
-	public AuctionController(AuctionDao auctionDao){
+	public AuctionController(AuctionDao auctionDao, ItemDao itemDao){
 		this.auctionDao = auctionDao;
+		this.itemDao = itemDao;
 	}
 	
 	
@@ -43,6 +56,14 @@ public class AuctionController {
 		auction.setStarDate(new Date());
 		auction.setUser(session.getUsuario());
 		auctionDao.save(auction);	
-		
+		result.redirectTo(UserrController.class).home();
 	}
+	
+	@Get("/dogepqp/search/{category}")
+	public void search(String category){
+		List<Item> list = itemDao.listByCategory(category);
+		result.use(Results.json()).from(list).serialize();
+	}
+	
+	
 }

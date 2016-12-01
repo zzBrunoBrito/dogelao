@@ -4,12 +4,12 @@ package controllers;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
-import annotation.Admin;
-import annotation.Logged;
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
+import component.Admin;
+import component.Logged;
 import component.UserSession;
 import dao.AuctionDao;
 import dao.ItemDao;
@@ -59,8 +59,7 @@ public class UserrController {
 		System.out.println(user.getUsername());
 		System.out.println(user.getPerson().getName());
 		userDao.save(user);
-		
-		result.redirectTo(IndexController.class).index();
+		result.redirectTo(UserrController.class).login(user);
 		
 	}
 	

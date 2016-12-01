@@ -3,12 +3,12 @@ package interceptors;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 
-import annotation.Logged;
 import br.com.caelum.vraptor.AroundCall;
 import br.com.caelum.vraptor.Intercepts;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.interceptor.AcceptsWithAnnotations;
 import br.com.caelum.vraptor.interceptor.SimpleInterceptorStack;
+import component.Logged;
 import component.UserSession;
 import controllers.IndexController;
 

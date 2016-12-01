@@ -12,6 +12,9 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
+import component.Category;
+
+
 
 public class Executar {
 
@@ -56,20 +59,6 @@ public class Executar {
 			//UserrDaoInterface dao = new UserrDao();
 			AuctionDaoInterface dao = new AuctionDao();
 			ItemDaoInterface itemDao = new ItemDao();
-			
-			//dao.save(auc);
-			List<Auction> list = dao.getRecent(9);
-			
-			List<Item> itemList = itemDao.listByUsage(true, 9);
-			
-			for (Item item : itemList) {
-				System.out.println(item.getName());
-			}
-			dao.save(auc);
-			//List<Auction> list = dao.getRecent();
-			//for (Auction auction : list) {
-				//System.out.println(auction.getName());
-			//}
 			
 		//} catch (NullPointerException e) {
 			//System.out.println("Falha ao encontrar");

@@ -29,4 +29,14 @@ public class ItemDao extends AbstractGenericDao<Item, Integer> implements ItemDa
         em.close();
         return item;
 	}
+	
+	public List<Item> listByCategory(String category){
+		EntityManager em = Fabrica.getEntityManager();
+        em.getTransaction().begin();
+        Session session = (Session) em.getDelegate();
+        List<Item> auc = (List<Item>) session.createCriteria(Item.class)
+        		.add(Restrictions.eq("category", category)).list();
+        em.close();
+        return auc;
+	}
 }

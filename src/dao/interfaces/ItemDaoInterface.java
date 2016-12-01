@@ -9,4 +9,5 @@ import model.Item;
  */
 public interface ItemDaoInterface {
 	public List<Item> listByUsage(boolean isUsed, int quantity);
+	public List<Item> listByCategory(String category);
 }

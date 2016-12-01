@@ -3,11 +3,11 @@ package interceptors;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 
-import annotation.Admin;
 import br.com.caelum.vraptor.AfterCall;
 import br.com.caelum.vraptor.Intercepts;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.interceptor.AcceptsWithAnnotations;
+import component.Admin;
 import component.UserSession;
 import controllers.UserrController;
 
