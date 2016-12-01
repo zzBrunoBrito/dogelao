@@ -39,7 +39,7 @@ public class AuctionController {
 		System.out.println(auction.getItem().getPrice());
 		System.out.println(auction.getItem().isUsed());
 		System.out.println(auction.getItem().getCategory());
-		auction.setDurationTime(new Time(60*1000*10));
+		auction.setDurationTime(new Time(60*1000));
 		auction.setStarDate(new Date());
 		auction.setUser(session.getUsuario());
 		auctionDao.save(auction);	
