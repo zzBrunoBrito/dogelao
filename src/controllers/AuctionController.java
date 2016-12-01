@@ -29,7 +29,7 @@ public class AuctionController {
 	@Inject
 	private Result result;
 	
-	private AuctionDaoInterface auctionDao;
+	private AuctionDaoInterface<Integer> auctionDao;
 	private ItemDaoInterface itemDao;
 	
 	public AuctionController(){
@@ -58,10 +58,9 @@ public class AuctionController {
 	
 	@Get("/dogepqp/search/{category}")
 	public void search(String category){
-		List<Item> list = itemDao.listByCategory(category);
+		List<Auction> list = auctionDao.listByCategory(category);
 		//result.use(Results.json()).from(list).serialize();
 		result.include("auction", list);
 	}
-	
 	
 }

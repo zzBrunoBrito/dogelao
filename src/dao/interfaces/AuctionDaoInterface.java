@@ -13,4 +13,5 @@ public interface AuctionDaoInterface<I extends Serializable> {
 	public void remove(I id);
 	public Auction findById(I id);
 	public List<Auction> getRecent(int result);
+	public List<Auction> listByCategory(String category);
 }

@@ -24,9 +24,7 @@ public class Item {
     private Double price;
     private Integer quantity;
     private boolean isUsed;
-    
-    @Enumerated(EnumType.STRING)
-    private Category category;
+    private String category;
     
     @Column(columnDefinition="mediumblob")
     private byte[] image;
@@ -78,11 +76,11 @@ public class Item {
 		this.isUsed = isUsed;
 	}
 	
-	public Category getCategory() {
+	public String getCategory() {
 		return category;
 	}
 
-	public void setCategory(Category category) {
+	public void setCategory(String category) {
 		this.category = category;
 	}
 

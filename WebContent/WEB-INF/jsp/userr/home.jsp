@@ -12,7 +12,7 @@
 <body>
 	<nav class="amber accent-EL1">
     <div class="nav-wrapper ">
-        <form>
+        <form method="post" action="/dogepqp/search">
             <div center class="input-field">
                 <input id="search" type="search" required placeholder="Pesquise por leil�es ou usu�rios aqui">
                 <label for="search"><i class="material-icons">search</i></label>

@@ -59,7 +59,11 @@ public class Executar {
 			//UserrDaoInterface dao = new UserrDao();
 			AuctionDaoInterface dao = new AuctionDao();
 			ItemDaoInterface itemDao = new ItemDao();
+			List<Auction> listAuction =  dao.listByCategory("ELETRONICO");		
 			
+			for (Auction auction : listAuction) {
+				System.out.println(auction.getItem().getName());
+			}
 		//} catch (NullPointerException e) {
 			//System.out.println("Falha ao encontrar");
 		//}

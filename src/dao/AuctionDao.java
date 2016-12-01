@@ -33,5 +33,16 @@ public class AuctionDao extends AbstractGenericDao<Auction, Integer> implements 
         return auc;
 	}
 	
+	public List<Auction> listByCategory(String category){
+		EntityManager em = Fabrica.getEntityManager();
+        em.getTransaction().begin();
+        Session session = (Session) em.getDelegate();
+        List<Auction> auc = (List<Auction>) session.createCriteria(Auction.class)
+        		.createAlias("item", "i")
+        		.add(Restrictions.eq("i.category", category)).list();
+        em.close();
+        return auc;
+	}
+	
 	
 }
