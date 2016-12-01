@@ -56,10 +56,10 @@ public class AuctionController {
 		result.redirectTo(UserrController.class).home();
 	}
 	
-	@Get("/dogepqp/search/{category}")
-	public void search(String category){
+	@Get("search/{category}")
+	public void list(String category){
 		List<Auction> list = auctionDao.listByCategory(category);
-		//result.use(Results.json()).from(list).serialize();
+		System.out.println(list.get(0).getItem().getName());
 		result.include("auction", list);
 	}
 	

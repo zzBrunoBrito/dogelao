@@ -2,7 +2,6 @@ package controllers;
 
 
 import javax.inject.Inject;
-import javax.persistence.EntityManager;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
@@ -17,8 +16,6 @@ import dao.UserrDao;
 import dao.interfaces.AuctionDaoInterface;
 import dao.interfaces.ItemDaoInterface;
 import dao.interfaces.UserrDaoInterface;
-import dao.util.Fabrica;
-import model.Item;
 import model.Userr;
 
 /**
@@ -60,7 +57,6 @@ public class UserrController {
 		System.out.println(user.getPerson().getName());
 		userDao.save(user);
 		result.redirectTo(UserrController.class).login(user);
-		
 	}
 	
 	@Admin
