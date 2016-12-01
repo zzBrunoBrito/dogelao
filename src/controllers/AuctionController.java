@@ -10,9 +10,6 @@ import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.view.Results;
-import component.Category;
-import component.Logged;
 import component.UserSession;
 import dao.AuctionDao;
 import dao.ItemDao;
@@ -62,7 +59,8 @@ public class AuctionController {
 	@Get("/dogepqp/search/{category}")
 	public void search(String category){
 		List<Item> list = itemDao.listByCategory(category);
-		result.use(Results.json()).from(list).serialize();
+		//result.use(Results.json()).from(list).serialize();
+		result.include("auction", list);
 	}
 	
 	
